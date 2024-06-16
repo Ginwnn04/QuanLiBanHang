@@ -52,6 +52,12 @@
     <Compile Include="BanHangFrm.Designer.cs">
       <DependentUpon>BanHangFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietHoaDonBanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHoaDonBanFrm.Designer.cs">
+      <DependentUpon>ChiTietHoaDonBanFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucVuFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     <Compile Include="Entity\NhanVien.cs" />
     <Compile Include="Entity\SanPham.cs" />
     <Compile Include="Entity\KhachHang.cs" />
+    <Compile Include="HoaDonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonFrm.Designer.cs">
+      <DependentUpon>HoaDonFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MuaHangFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,8 +128,14 @@
     <EmbeddedResource Include="BanHangFrm.resx">
       <DependentUpon>BanHangFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietHoaDonBanFrm.resx">
+      <DependentUpon>ChiTietHoaDonBanFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucVuFrm.resx">
       <DependentUpon>ChucVuFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonFrm.resx">
+      <DependentUpon>HoaDonFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MuaHangFrm.resx">
       <DependentUpon>MuaHangFrm.cs</DependentUpon>

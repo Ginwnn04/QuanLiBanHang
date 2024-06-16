@@ -78,5 +78,10 @@ namespace QuanLiBanHang
             login.Show();
             this.Hide();
         }
+
+        private void btnHoaDonBan_Click(object sender, EventArgs e)
+        {
+            openChildForm(new HoaDonFrm());
+        }
     }
 }

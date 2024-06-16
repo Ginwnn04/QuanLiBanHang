@@ -222,6 +222,7 @@
             this.btnHoaDonBan.TabIndex = 0;
             this.btnHoaDonBan.Text = "Hoá Đơn Bán";
             this.btnHoaDonBan.UseVisualStyleBackColor = false;
+            this.btnHoaDonBan.Click += new System.EventHandler(this.btnHoaDonBan_Click);
             // 
             // pnBody
             // 

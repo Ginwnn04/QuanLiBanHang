@@ -35,3 +35,5 @@ D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.csproj
 D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.csproj.CoreCompileInputs.cache
 D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.exe
 D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.pdb
+D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.HoaDonFrm.resources
+D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.ChiTietHoaDonBanFrm.resources
