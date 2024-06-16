@@ -66,5 +66,17 @@ namespace QuanLiBanHang
         {
             openChildForm(new MuaHangFrm());
         }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+            openChildForm(new BanHangFrm());
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            LoginFrm login = new LoginFrm();
+            login.Show();
+            this.Hide();
+        }
     }
 }

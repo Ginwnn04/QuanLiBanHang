@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,31 +36,31 @@ namespace QuanLiBanHang
             }
 
             SqlConnection con = ConnectDB.getConnect();
-            if (con == null)
+            if (!ConnectDB.open())
             {
                 MessageBox.Show("Kết nối thất bại");
                 return;
             }
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
 
-            String query = "SELECT * FROM tb_employee WHERE is_deleted = 0";
+            String query = "SELECT * FROM tb_employee WHERE phone = @phone AND password = @password";
             SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@phone", txtSDT.Text);
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
             SqlDataReader reader = cmd.ExecuteReader();
+            
+            
             if (reader.Read())
             {
-                if (txtSDT.Text == reader.GetString(3) && txtPassword.Text == reader.GetString(4))
-                {
-                    MessageBox.Show("Đăng nhập thành công");
-
-                }
-                else
-                {
-                    MessageBox.Show("Sai thông tin đăng nhập");
-                }
+                MenuFrm menu = new MenuFrm();
+                menu.Show();
+                this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+            }
+            con.Close();
         }
     }
 }

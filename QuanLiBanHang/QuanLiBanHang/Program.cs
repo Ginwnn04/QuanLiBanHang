@@ -16,7 +16,7 @@ namespace QuanLiBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BanHangFrm());
+            Application.Run(new LoginFrm());
         }
     }
 }

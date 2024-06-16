@@ -63,6 +63,7 @@
     <Compile Include="Entity\ChiTietHoaDonMua.cs" />
     <Compile Include="Entity\ChucVu.cs" />
     <Compile Include="Entity\GoiMon.cs" />
+    <Compile Include="Entity\HoaDonBan.cs" />
     <Compile Include="Entity\HoaDonMua.cs" />
     <Compile Include="Entity\NhaCungCap.cs" />
     <Compile Include="Entity\NhanVien.cs" />

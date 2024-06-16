@@ -78,6 +78,7 @@
             this.btnDangXuat.TabIndex = 9;
             this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnChucVu
             // 
@@ -157,6 +158,7 @@
             this.btnBanHang.TabIndex = 4;
             this.btnBanHang.Text = "Bán Hàng";
             this.btnBanHang.UseVisualStyleBackColor = true;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // btnKhachHang
             // 

@@ -93,6 +93,7 @@
             this.btnThanhToan.TabIndex = 7;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // lbTien
             // 

@@ -147,12 +147,8 @@ namespace QuanLiBanHang
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
             SanPham sp = getSanPham(chiTietChon.product_id);
-  
-            
 
-            int quantityNew = sp.quantity + chiTietChon.quantity;
-            MessageBox.Show(sp.quantity + " " + chiTietChon.quantity + " " + quantityNew);
-            lbSoLuong.Text = quantityNew.ToString();
+            lbSoLuong.Text = sp.quantity.ToString();
             
 
 
@@ -212,10 +208,15 @@ namespace QuanLiBanHang
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            
+            SanPham sp = getSanPham(chiTietChon.product_id);
+            sp.quantity += chiTietChon.quantity;
+
             chiTietChon.quantity = int.Parse(dudSoLuong.Text);
             chiTietChon.total = chiTietChon.quantity * chiTietChon.price;
-            lbSoLuong.Text =  (int.Parse(lbSoLuong.Text) - chiTietChon.quantity) + "";
+            
+            sp.quantity -= chiTietChon.quantity;
+            lbSoLuong.Text = sp.quantity + "";
+
             loadDataSanPhamChon();
             MessageBox.Show("Sửa thành công");
             btnDatMon.Enabled = true;
@@ -225,12 +226,15 @@ namespace QuanLiBanHang
             cbxSanPham.SelectedIndex = -1;
             lbSoLuong.Text = "";
             dudSoLuong.Text = "1";
+            idChiTietChon = -1;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            SanPham sp = getSanPham(chiTietChon.product_id);
+            sp.quantity += chiTietChon.quantity;
             listChiTietDonBan.Remove(chiTietChon);
-            lbSoLuong.Text = (int.Parse(lbSoLuong.Text) + chiTietChon.quantity) + "";
+            lbSoLuong.Text = sp.quantity + "";
             loadDataSanPhamChon();
             MessageBox.Show("Xoá thành công");
             btnDatMon.Enabled = true;
@@ -240,6 +244,123 @@ namespace QuanLiBanHang
             cbxSanPham.SelectedIndex = -1;
             lbSoLuong.Text = "";
             dudSoLuong.Text = "1";
+            idChiTietChon = -1;
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            long invocie_id = writeDataInvoice();
+            if (invocie_id == -1)
+            {
+                MessageBox.Show("Thanh toán thất bại");
+                return;
+            }
+            if (writeDataChiTiet(invocie_id))
+            {
+                MessageBox.Show("Thanh toán thành công");
+            }
+        }
+
+        public bool writeDataChiTiet(long invoice_id)
+        {
+            if (listChiTietDonBan.Count == 0)
+            {
+                MessageBox.Show("Không thể thanh toán vì chưa chọn sản phẩm");
+                return false;
+            }
+            SqlConnection con = ConnectDB.getConnect();
+            if (!ConnectDB.open())
+            {
+                MessageBox.Show("Kết nối thất bại");
+                return false;
+            }
+            string query = "INSERT INTO tb_detail_order VALUES (@id, @product_id, @price, @invoice_id, @quantity, @total)";
+            SqlCommand cmd = new SqlCommand(query, con);
+            foreach (ChiTietHoaDonBan ct in listChiTietDonBan)
+            {
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("id", ct.id);
+                cmd.Parameters.AddWithValue("product_id", ct.product_id);
+                cmd.Parameters.AddWithValue("price", ct.price);
+                cmd.Parameters.AddWithValue("quantity", ct.quantity);
+                cmd.Parameters.AddWithValue("total", ct.total);
+                cmd.Parameters.AddWithValue("invoice_id", invoice_id);
+
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    MessageBox.Show("Lỗi khi thêm chi tiết");
+                    con.Close();
+                    return false;
+                }
+            }
+            foreach (ChiTietHoaDonBan ct in listChiTietDonBan)
+            {
+                SanPham sp = getSanPham(ct.product_id);
+
+                if (!updateQuantity(ct.product_id, sp.quantity))
+                {
+                    MessageBox.Show("Lỗi khi cập nhật số lượng");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public bool updateQuantity(long product_id, int newQuantity)
+        {
+            SqlConnection con = ConnectDB.getConnect();
+            if (!ConnectDB.open())
+            {
+                MessageBox.Show("Kết nối thất bại");
+                return false;
+            }
+            string query = "UPDATE tb_product SET quantity = @quantity WHERE id = @id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("quantity", newQuantity);
+            cmd.Parameters.AddWithValue("id", product_id);
+
+            int result = cmd.ExecuteNonQuery();
+            con.Close();
+            if (result <= 0)
+            {
+                MessageBox.Show("Lỗi khi cập nhật số lượng");
+                return false;
+            }
+            return true;
+        }
+
+        public long writeDataInvoice()
+        {
+            HoaDonBan invoice = new HoaDonBan();
+            invoice.id = DateTime.Now.Ticks / 1000000;
+            invoice.employee_id = 638539669000;
+            invoice.customer_id = 638540592963;
+            invoice.total = total;
+            invoice.date = DateTime.Now;
+
+            SqlConnection con = ConnectDB.getConnect();
+            if (!ConnectDB.open())
+            {
+                MessageBox.Show("Kết nối thất bại");
+                return -1;
+            }
+            string query = "INSERT INTO tb_invoices VALUES (@id, @total, @time, @customer_id, @employee_id)";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("id", invoice.id);
+            cmd.Parameters.AddWithValue("total", invoice.total);
+            cmd.Parameters.AddWithValue("customer_id", invoice.customer_id);
+            cmd.Parameters.AddWithValue("employee_id", invoice.employee_id);
+            cmd.Parameters.AddWithValue("time", invoice.date);
+
+            int result = cmd.ExecuteNonQuery();
+            con.Close();
+            if (result <= 0)
+            {
+                MessageBox.Show("Lỗi khi thêm hóa đơn");
+                return -1;
+            }
+
+            return invoice.id;
         }
     }
     
