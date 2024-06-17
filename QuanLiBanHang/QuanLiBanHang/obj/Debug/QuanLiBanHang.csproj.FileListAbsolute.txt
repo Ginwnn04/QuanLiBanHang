@@ -57,3 +57,5 @@ C:\Users\quang\OneDrive\Desktop\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\De
 C:\Users\quang\OneDrive\Desktop\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.csproj.CoreCompileInputs.cache
 C:\Users\quang\OneDrive\Desktop\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.exe
 C:\Users\quang\OneDrive\Desktop\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.pdb
+D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.HoaDonMuaFrm.resources
+D:\Save\QuanLiBanHang\QuanLiBanHang\QuanLiBanHang\obj\Debug\QuanLiBanHang.ChiTietHoaDonMuaFrm.resources

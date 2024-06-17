@@ -231,6 +231,16 @@ namespace QuanLiBanHang
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            // Hỏi xác nhận
+            // Hãy code đi
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn xóa không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dr == DialogResult.No)
+            {
+                return;
+            }
+
+
             SanPham sp = getSanPham(chiTietChon.product_id);
             sp.quantity += chiTietChon.quantity;
             listChiTietDonBan.Remove(chiTietChon);

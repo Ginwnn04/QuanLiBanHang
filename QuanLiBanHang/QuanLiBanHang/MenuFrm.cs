@@ -83,5 +83,10 @@ namespace QuanLiBanHang
         {
             openChildForm(new HoaDonFrm());
         }
+
+        private void btnHoaDonMua_Click(object sender, EventArgs e)
+        {
+            openChildForm(new HoaDonMuaFrm());
+        }
     }
 }

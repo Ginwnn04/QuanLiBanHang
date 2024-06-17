@@ -206,6 +206,7 @@
             this.btnHoaDonMua.TabIndex = 1;
             this.btnHoaDonMua.Text = "Hoá Đơn Mua";
             this.btnHoaDonMua.UseVisualStyleBackColor = true;
+            this.btnHoaDonMua.Click += new System.EventHandler(this.btnHoaDonMua_Click);
             // 
             // btnHoaDonBan
             // 

@@ -58,13 +58,19 @@ namespace QuanLiBanHang
             dt.Columns.Add("Nhân viên");
             foreach (HoaDonBan hoaDon in listHoaDon)
             {
-                dt.Rows.Add(hoaDon.id, hoaDon.total, hoaDon.date, hoaDon.customer_id, hoaDon.employee_id);
+                dt.Rows.Add(hoaDon.id, hoaDon.total, hoaDon.date, getNameKhachHang(hoaDon.customer_id), getNameNhanVien(hoaDon.employee_id));
             }
             dgvHoaDon.DataSource = dt;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn xóa không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dr == DialogResult.No)
+            {
+                return;
+            }
             if (hoaDonChon == null)
             {
                 MessageBox.Show("Chưa chọn hóa");
@@ -173,6 +179,49 @@ namespace QuanLiBanHang
             ChiTietHoaDonBanFrm chiTietForm = new ChiTietHoaDonBanFrm();
             chiTietForm.addInvoice(hoaDonChon);
             chiTietForm.ShowDialog();
+        }
+
+        public string getNameNhanVien(long id)
+        {
+            string name = "";
+            SqlConnection con = ConnectDB.getConnect();
+            if (!ConnectDB.open())
+            {
+                MessageBox.Show("Kết nối không thành công");
+                return name;
+            }
+            string query = "SELECT name FROM tb_employee WHERE id = @id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                name = reader.GetString(0);
+            }
+            con.Close();
+            return name;
+
+        }
+
+        public string getNameKhachHang(long id)
+        {
+            string name = "";
+            SqlConnection con = ConnectDB.getConnect();
+            if (!ConnectDB.open())
+            {
+                MessageBox.Show("Kết nối không thành công");
+                return name;
+            }
+            string query = "SELECT name FROM tb_customer WHERE id = @id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                name = reader.GetString(0);
+            }
+            con.Close();
+            return name;
         }
     }
 }

@@ -190,6 +190,12 @@ namespace QuanLiBanHang
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn xóa không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dr == DialogResult.No)
+            {
+                return;
+            }
             if (txtMa.Text == "")
             {
                 MessageBox.Show("Vui lòng chọn nhân viên cần xóa");

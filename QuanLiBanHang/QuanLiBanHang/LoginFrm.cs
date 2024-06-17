@@ -46,7 +46,7 @@ namespace QuanLiBanHang
 
             // inject sql
             // String query1 = "SELECT * FROM tb_employee WHERE phone = " + " '" + txtSDT.Text + "' " + " AND password = " + " '" + txtPassword.Text + "' ";
-            MessageBox.Show(query);
+
             SqlCommand cmd = new SqlCommand(query, con);
 
             

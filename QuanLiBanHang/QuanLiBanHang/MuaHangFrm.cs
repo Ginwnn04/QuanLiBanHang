@@ -212,7 +212,7 @@ namespace QuanLiBanHang
             }
             // !writeDataChiTiet(import_bill_id)  => writeDataChiTiet(import_bill_id) == false
             // writeDataChiTiet(import_bill_id)  => writeDataChiTiet(import_bill_id) == true
-            if (!writeDataChiTiet(import_bill_id)) // return true thì thực hiện
+            if (writeDataChiTiet(import_bill_id)) // return true thì thực hiện
             {
                 MessageBox.Show("Thanh toán thành công");
                 return;
@@ -385,6 +385,12 @@ namespace QuanLiBanHang
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn xóa không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dr == DialogResult.No)
+            {
+                return;
+            }
             listChiTietMua.Remove(ChiTietChon);
             ChiTietChon = null;
             btnDatMon.Enabled = true;
