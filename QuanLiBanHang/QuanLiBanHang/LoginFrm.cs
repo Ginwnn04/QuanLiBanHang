@@ -41,19 +41,27 @@ namespace QuanLiBanHang
                 MessageBox.Show("Kết nối thất bại");
                 return;
             }
-
+            // Anti injection sql
             String query = "SELECT * FROM tb_employee WHERE phone = @phone AND password = @password";
+
+            // inject sql
+            // String query1 = "SELECT * FROM tb_employee WHERE phone = " + " '" + txtSDT.Text + "' " + " AND password = " + " '" + txtPassword.Text + "' ";
+            MessageBox.Show(query);
             SqlCommand cmd = new SqlCommand(query, con);
+
+            
+
             cmd.Parameters.AddWithValue("@phone", txtSDT.Text);
             cmd.Parameters.AddWithValue("@password", txtPassword.Text);
 
             SqlDataReader reader = cmd.ExecuteReader();
-            
-            
+
+
             if (reader.Read())
             {
                 MenuFrm menu = new MenuFrm();
                 menu.Show();
+
                 this.Hide();
             }
             else

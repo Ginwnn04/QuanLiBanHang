@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxNhaCungCap = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.lbTien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.cbxNhaCungCap = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
@@ -67,6 +67,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // cbxNhaCungCap
+            // 
+            this.cbxNhaCungCap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxNhaCungCap.FormattingEnabled = true;
+            this.cbxNhaCungCap.Location = new System.Drawing.Point(141, 55);
+            this.cbxNhaCungCap.Name = "cbxNhaCungCap";
+            this.cbxNhaCungCap.Size = new System.Drawing.Size(137, 28);
+            this.cbxNhaCungCap.TabIndex = 11;
+            this.cbxNhaCungCap.SelectedIndexChanged += new System.EventHandler(this.cbxNhaCungCap_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(25, 58);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Nhà cung cấp";
             // 
             // btnThanhToan
             // 
@@ -190,25 +209,6 @@
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // cbxNhaCungCap
-            // 
-            this.cbxNhaCungCap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxNhaCungCap.FormattingEnabled = true;
-            this.cbxNhaCungCap.Location = new System.Drawing.Point(141, 55);
-            this.cbxNhaCungCap.Name = "cbxNhaCungCap";
-            this.cbxNhaCungCap.Size = new System.Drawing.Size(137, 28);
-            this.cbxNhaCungCap.TabIndex = 11;
-            this.cbxNhaCungCap.SelectedIndexChanged += new System.EventHandler(this.cbxNhaCungCap_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 58);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Nhà cung cấp";
             // 
             // MuaHangFrm
             // 

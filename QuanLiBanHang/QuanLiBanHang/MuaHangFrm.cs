@@ -19,8 +19,10 @@ namespace QuanLiBanHang
         List<NhaCungCap> listNhaCungCap = new List<NhaCungCap>();
         List<ChiTietHoaDonMua> listChiTietMua = new List<ChiTietHoaDonMua>();
         long total = 0;
+        
         int indexSuplierSelected = -1;
         ChiTietHoaDonMua ChiTietChon = null;
+
         public MuaHangFrm()
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace QuanLiBanHang
         public void readDataNhaCungCap()
         {
             SqlConnection con = ConnectDB.getConnect();
-            if (!ConnectDB.open())
+            if (!ConnectDB.open()) // 
             {
                 MessageBox.Show("Kết nối thất bại");
                 return;
@@ -40,7 +42,8 @@ namespace QuanLiBanHang
 
             String query = "SELECT * FROM tb_suplier";
             SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader reader = cmd.ExecuteReader();
+            SqlDataReader reader = cmd.ExecuteReader(); 
+
             while (reader.Read())
             {
                 NhaCungCap ncc = new NhaCungCap();
@@ -55,6 +58,7 @@ namespace QuanLiBanHang
             con.Close();
         }
 
+        // 1
         public void loadDataSanPhamChon()
         {
 
@@ -78,6 +82,7 @@ namespace QuanLiBanHang
             lbTien.Text = total.ToString();
             dgvSanPham.DataSource = dt;
         }
+        //  Mã nhà cung cấp
         public void readDataSanPham(long suplier_id)
         {
             SqlConnection con = ConnectDB.getConnect();
@@ -92,6 +97,7 @@ namespace QuanLiBanHang
             cmd.Parameters.AddWithValue("suplier_id", suplier_id);
             SqlDataReader reader = cmd.ExecuteReader();
 
+            
             listSanPham.Clear();
             cbxSanPham.Items.Clear();
 
@@ -137,6 +143,7 @@ namespace QuanLiBanHang
             return null;
         }
 
+       
         private void btnDatMon_Click(object sender, EventArgs e)
         {
 
@@ -151,10 +158,12 @@ namespace QuanLiBanHang
                 return;
             }
 
+            // Lần đầu
             if (indexSuplierSelected == -1)
             {
                 indexSuplierSelected = cbxNhaCungCap.SelectedIndex;
             }
+            // Những lần sau
             else
             {
                 if (indexSuplierSelected != cbxNhaCungCap.SelectedIndex)
@@ -190,7 +199,6 @@ namespace QuanLiBanHang
             loadDataSanPhamChon();
             dudSoLuong.SelectedIndex = 4;
 
-
         }
 
 
@@ -202,11 +210,14 @@ namespace QuanLiBanHang
                 MessageBox.Show("Lỗi khi thêm hóa đơn");
                 
             }
-            if (writeDataChiTiet(import_bill_id))
+            // !writeDataChiTiet(import_bill_id)  => writeDataChiTiet(import_bill_id) == false
+            // writeDataChiTiet(import_bill_id)  => writeDataChiTiet(import_bill_id) == true
+            if (!writeDataChiTiet(import_bill_id)) // return true thì thực hiện
             {
                 MessageBox.Show("Thanh toán thành công");
-               
+                return;
             }
+            MessageBox.Show("Thanh toán thất bại");
         }
 
         public bool updateQuantity(long product_id, int newQuantity)
@@ -257,13 +268,16 @@ namespace QuanLiBanHang
                 cmd.Parameters.AddWithValue("total", ct.total);
                 cmd.Parameters.AddWithValue("import_id", import_bill_id);
 
-                if (cmd.ExecuteNonQuery() == 0)
+                if (cmd.ExecuteNonQuery() <= 0)
                 {
                     MessageBox.Show("Lỗi khi thêm chi tiết");
                     con.Close();
                     return false;
                 }
             }
+            
+
+
             foreach (ChiTietHoaDonMua ct in listChiTietMua)
             {
                 SanPham sp = getSanPham(ct.product_id);
@@ -318,7 +332,7 @@ namespace QuanLiBanHang
             long suplier_id = listNhaCungCap[cbxNhaCungCap.SelectedIndex].id;
             readDataSanPham(suplier_id);
             dudSoLuong.SelectedIndex = 4;
-
+            
         }
 
         private void cbxSanPham_SelectedIndexChanged(object sender, EventArgs e)
@@ -326,10 +340,11 @@ namespace QuanLiBanHang
             dudSoLuong.SelectedIndex = 4;
         }
 
-       
+       // 
 
         private void dgvSanPham_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            
             ChiTietChon = listChiTietMua[e.RowIndex];
 
             cbxNhaCungCap.SelectedIndex = indexSuplierSelected;
@@ -362,6 +377,7 @@ namespace QuanLiBanHang
             btnDatMon.Enabled = true;
             cbxNhaCungCap.Enabled = true;
             cbxSanPham.Enabled = true;
+
             cbxSanPham.SelectedIndex = -1;
 
             loadDataSanPhamChon();

@@ -9,7 +9,7 @@ namespace QuanLiBanHang
 {
     public class ConnectDB
     {
-        private static String strConnect = "Data Source=Quang\\SQLEXPRESS;Initial Catalog=QuanLiBanHang;Integrated Security=True";
+        private static String strConnect = "Data Source=DESKTOP-6VVP7BU;Initial Catalog=QuanLiBanHang;Integrated Security=True";
         public static SqlConnection con = null;
 
         private ConnectDB()

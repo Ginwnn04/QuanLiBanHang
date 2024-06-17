@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QuanLiBanHang\\",
+  "WorkspaceRootPath": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|d:\\quanlibanhang\\quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|c:\\users\\quang\\onedrive\\desktop\\quanlibanhang\\quanlibanhang\\quanlibanhang\\chucvufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\chucvufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|D:\\QuanLiBanHang\\quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\loginfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\loginfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|D:\\QuanLiBanHang\\quanlibanhang\\entity\\chitiethoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\entity\\chitiethoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|D:\\QuanLiBanHang\\quanlibanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\loginfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\loginfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\quanlibanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,50 +46,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChiTietHoaDonBan.cs",
-              "DocumentMoniker": "D:\\QuanLiBanHang\\QuanLiBanHang\\Entity\\ChiTietHoaDonBan.cs",
-              "RelativeDocumentMoniker": "QuanLiBanHang\\Entity\\ChiTietHoaDonBan.cs",
-              "ToolTip": "D:\\QuanLiBanHang\\QuanLiBanHang\\Entity\\ChiTietHoaDonBan.cs",
-              "RelativeToolTip": "QuanLiBanHang\\Entity\\ChiTietHoaDonBan.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:38:22.018Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BanHangFrm.cs",
-              "DocumentMoniker": "D:\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
-              "RelativeDocumentMoniker": "QuanLiBanHang\\BanHangFrm.cs",
-              "ToolTip": "D:\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
-              "RelativeToolTip": "QuanLiBanHang\\BanHangFrm.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAAAewNgAAABJAAAA",
+              "Title": "ChucVuFrm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\ChucVuFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\ChucVuFrm.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\ChucVuFrm.cs [Design]",
+              "RelativeToolTip": "QuanLiBanHang\\ChucVuFrm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:27:07.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BanHangFrm.cs [Design]",
-              "DocumentMoniker": "D:\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
-              "RelativeDocumentMoniker": "QuanLiBanHang\\BanHangFrm.cs",
-              "ToolTip": "D:\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs [Design]",
-              "RelativeToolTip": "QuanLiBanHang\\BanHangFrm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:24:53.951Z",
+              "WhenOpened": "2024-06-17T02:48:34.985Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuFrm.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MenuFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\MenuFrm.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MenuFrm.cs",
+              "RelativeToolTip": "QuanLiBanHang\\MenuFrm.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAawEwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T02:25:25.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginFrm.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\LoginFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\LoginFrm.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\LoginFrm.cs",
+              "RelativeToolTip": "QuanLiBanHang\\LoginFrm.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T02:24:00.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginFrm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\LoginFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\LoginFrm.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\LoginFrm.cs [Design]",
+              "RelativeToolTip": "QuanLiBanHang\\LoginFrm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T02:23:54.295Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MenuFrm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MenuFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\MenuFrm.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MenuFrm.cs [Design]",
+              "RelativeToolTip": "QuanLiBanHang\\MenuFrm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T01:41:51.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConnectDB.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\ConnectDB.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\ConnectDB.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\ConnectDB.cs",
+              "RelativeToolTip": "QuanLiBanHang\\ConnectDB.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:17:23.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\QuanLiBanHang\\QuanLiBanHang\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\Program.cs",
               "RelativeDocumentMoniker": "QuanLiBanHang\\Program.cs",
-              "ToolTip": "D:\\QuanLiBanHang\\QuanLiBanHang\\Program.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\Desktop\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\Program.cs",
               "RelativeToolTip": "QuanLiBanHang\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T15:02:15.064Z"
             }
