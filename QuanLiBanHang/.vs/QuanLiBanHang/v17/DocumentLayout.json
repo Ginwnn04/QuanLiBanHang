@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|d:\\coding\\quanlibanhang\\quanlibanhang\\quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|d:\\coding\\quanlibanhang\\quanlibanhang\\quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\banhangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|d:\\coding\\quanlibanhang\\quanlibanhang\\quanlibanhang\\muahangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\muahangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|d:\\coding\\quanlibanhang\\quanlibanhang\\quanlibanhang\\muahangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{015830A5-5130-42C9-B1B1-B9A51D6F3D58}|QuanLiBanHang\\QuanLiBanHang.csproj|solutionrelative:quanlibanhang\\muahangfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BanHangFrm.cs",
+              "DocumentMoniker": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\BanHangFrm.cs",
+              "ToolTip": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
+              "RelativeToolTip": "QuanLiBanHang\\BanHangFrm.cs",
+              "ViewState": "AQIAAHsBAAAAAAAAAAAkwIEBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:06:58.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BanHangFrm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\BanHangFrm.cs",
+              "ToolTip": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\BanHangFrm.cs [Design]",
+              "RelativeToolTip": "QuanLiBanHang\\BanHangFrm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:06:57.607Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MuaHangFrm.cs",
+              "DocumentMoniker": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MuaHangFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\MuaHangFrm.cs",
+              "ToolTip": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MuaHangFrm.cs",
+              "RelativeToolTip": "QuanLiBanHang\\MuaHangFrm.cs",
+              "ViewState": "AQIAAG4BAAAAAAAAAAA3wIMBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:06:18.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MuaHangFrm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MuaHangFrm.cs",
+              "RelativeDocumentMoniker": "QuanLiBanHang\\MuaHangFrm.cs",
+              "ToolTip": "D:\\Coding\\QuanLiBanHang\\QuanLiBanHang\\QuanLiBanHang\\MuaHangFrm.cs [Design]",
+              "RelativeToolTip": "QuanLiBanHang\\MuaHangFrm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:06:16.615Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
